@@ -1,0 +1,5 @@
+#!/bin/bash
+
+#python3 convert_to_im.py -f "training_2000.csv" -i "training_ims_iter4.npy"
+#python3 convert_to_im.py -f "testing_500.csv" -i "testing_ims_iter5.npy"
+python3 classifier_train.py -m "antenna_cnn04" -f "training_2000.csv" -t "testing_500.csv" -i "training_ims_iter4.npy" -x "testing_ims_iter5.npy" -th 3.9 -e 1000 -lr 0.001 -c

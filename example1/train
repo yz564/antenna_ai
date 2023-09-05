@@ -1,0 +1,7 @@
+#!/bin/bash
+#python3 convert_to_im.py -f "training_dataset_1000.csv" -i "training_ims_iter1.npy"
+#python3 convert_to_im.py -f "iter2_500.csv" -i "testing_ims_iter2.npy"
+#python3 classifier_train.py -m "antenna_cnn02_c" -f "training_dataset_1000.csv" -t "iter2_500.csv" -i "training_ims_iter1.npy" -x "testing_ims_iter2.npy" -th 4.48 -e 1000 -lr 0.001 -c
+#python3 convert_to_im.py -f "training_dataset_3500.csv" -i "training_ims_iter6.npy"
+#python3 convert_to_im.py -f "iter7_500.csv" -i "testing_ims_iter7.npy"
+python3 classifier_train.py -m "antenna_cnn07_7" -f "training_dataset_3500.csv" -t "iter7_500.csv" -i "training_ims_iter6.npy" -x "testing_ims_iter7.npy" -th 3.93 -e 1000 -lr 0.001
